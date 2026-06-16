@@ -1,0 +1,5 @@
+# Update the domain below when you deploy (search for toolspackonline.com)
+User-agent: *
+Allow: /
+
+Sitemap: https://toolspackonline.com/sitemap.xml
