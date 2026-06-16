@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatador e Validador JSON DevPro - Ferramenta Gratuita</title>
+    <meta name="description" content="Cole, formate, valide e minifique seus objetos JSON online instantaneamente de forma gratuita com nossa ferramenta utilitária para desenvolvedores.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body, aside, section, article, textarea, div, button, header {
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body id="appBody" class="bg-white text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- NAVBAR: PRETO TOTAL -->
+    <header id="navbar" class="bg-slate-950 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
+                <span>⚡ DevTools Pro</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400 mr-auto ml-8">
+                <a href="index.html" class="hover:text-white transition">Conversor Case</a>
+                <a href="json-format.html" class="hover:text-white transition text-indigo-400 font-medium">Formatador JSON</a>
+                <a href="password-generator.html" class="hover:text-white transition">Gerador de Senhas</a>
+            </nav>
+            <button onclick="toggleTheme()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium transition cursor-pointer flex items-center gap-1">
+                🌓 <span id="themeBtnText">Modo Escuro</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ANÚNCIO 1 -->
+    <div id="adArea1" class="w-full bg-slate-100 py-4 border-b border-slate-200 flex justify-center items-center">
+        <div class="w-full max-w-[728px] h-[90px] bg-slate-200/60 rounded flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-400">
+            <span>[Espaço Anúncio 1 - Banner Horizontal 728x90]</span>
+        </div>
+    </div>
+
+    <!-- MAIN GRID -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- COLUNA ESQUERDA -->
+        <aside class="lg:col-span-3 space-y-6">
+            <div id="menuCard" class="bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
+                <h3 id="menuTitle" class="font-semibold text-sm text-slate-500 uppercase tracking-wider mb-3">Menu de Ferramentas</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" id="menuLink1" class="block p-2 rounded hover:bg-slate-100 text-slate-700 font-medium transition">Modificar Caixa de Texto</a></li>
+                    <li><a href="json-format.html" id="menuActiveLink" class="block p-2 rounded bg-indigo-50 text-indigo-600 font-semibold">Formatador JSON</a></li>
+                    <li><a href="password-generator.html" id="menuLink2" class="block p-2 rounded hover:bg-slate-100 text-slate-700 font-medium transition">Gerador de Senhas</a></li>
+                </ul>
+            </div>
+
+            <!-- ANÚNCIO 2 -->
+            <div id="adArea2" class="w-full h-[250px] bg-slate-50 rounded-xl flex items-center justify-center text-xs text-slate-400 border border-dashed border-slate-300">
+                <span>[Espaço Anúncio 2 - Quadrado 250x250]</span>
+            </div>
+        </aside>
+
+        <!-- COLUNA CENTRAL -->
+        <section class="lg:col-span-6 space-y-6">
+            <div id="mainCard" class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                <div>
+                    <h1 id="mainTitle" class="text-2xl font-bold text-slate-900">Formatador e Validador JSON</h1>
+                    <p id="mainSubtitle" class="text-sm text-slate-500">Cole sua string JSON bruta abaixo para indentar ou minificar.</p>
+                </div>
+
+                <textarea id="jsonInput" class="w-full h-64 p-4 bg-slate-950 border border-slate-900 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm text-white placeholder-slate-500 resize-none font-mono" placeholder='{ "status": "cole seu json aqui" }'></textarea>
+
+                <div id="validationFeedback" class="hidden text-xs p-2 rounded border"></div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <button onclick="processJson('beautify')" id="btnOpt1" class="px-4 py-2 bg-slate-200 hover:bg-indigo-600 hover:text-white text-slate-800 text-sm font-medium rounded transition cursor-pointer">Formatar JSON</button>
+                    <button onclick="processJson('minify')" id="btnOpt2" class="px-4 py-2 bg-slate-200 hover:bg-indigo-600 hover:text-white text-slate-800 text-sm font-medium rounded transition cursor-pointer">Minificar</button>
+                    <button onclick="clearInput()" id="btnOpt3" class="px-4 py-2 bg-slate-200 hover:bg-rose-600 hover:text-white text-slate-700 text-sm font-medium rounded transition cursor-pointer">Limpar</button>
+                    <button onclick="copyJson()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded transition ml-auto flex items-center gap-1 cursor-pointer">📋 Copiar</button>
+                </div>
+            </div>
+
+            <!-- CONTEÚDO SEO -->
+            <article id="seoCard" class="prose max-w-none text-sm text-slate-600 space-y-4 bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm">
+                <h2 id="seoTitle" class="text-lg font-semibold text-slate-900">O que é um Formatador JSON Online?</h2>
+                <p>O JSON é o formato padrão mais utilizado para troca de dados em APIs modernas de desenvolvimento web.</p>
+            </article>
+        </section>
+
+        <!-- COLUNA DIREITA (ANÚNCIO 3) -->
+        <aside class="lg:col-span-3 flex justify-center">
+            <div id="adArea3" class="w-full max-w-[160px] h-[600px] bg-slate-50 rounded-xl flex items-center justify-center text-xs text-slate-400 border border-dashed border-slate-300 sticky top-24">
+                <span>[Espaço Anúncio 3 - Vertical 160x600]</span>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- ANÚNCIO 4 -->
+    <div id="adArea4Parent" class="w-full bg-slate-50 py-8 border-t border-slate-200 mt-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
+            <h4 id="adArea4Title" class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Conteúdo Patrocinado</h4>
+            <div id="adArea4" class="w-full max-w-[970px] min-h-[250px] bg-slate-200/40 rounded-xl flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-300">
+                <span>[Espaço Anúncio 4 - Bloco de Anúncios Nativo/Grade de Links]</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400">
+        <p>&copy; 2026 DevTools Pro • <a href="privacy-policy.html" class="hover:underline text-indigo-400">Política de Privacidade</a></p>
+    </footer>
+
+    <script>
+        function applyTheme(theme) {
+            const body = document.getElementById('appBody');
+            const adArea1 = document.getElementById('adArea1');
+            const adArea1Box = adArea1.querySelector('div');
+            const menuCard = document.getElementById('menuCard');
+            const menuTitle = document.getElementById('menuTitle');
+            const menuActiveLink = document.getElementById('menuActiveLink');
+            const menuLink1 = document.getElementById('menuLink1');
+            const menuLink2 = document.getElementById('menuLink2');
+            const adArea2 = document.getElementById('adArea2');
+            const mainCard = document.getElementById('mainCard');
+            const mainTitle = document.getElementById('mainTitle');
+            const mainSubtitle = document.getElementById('mainSubtitle');
+            const btnOpt1 = document.getElementById('btnOpt1');
+            const btnOpt2 = document.getElementById('btnOpt2');
+            const btnOpt3 = document.getElementById('btnOpt3');
+            const seoCard = document.getElementById('seoCard');
+            const seoTitle = document.getElementById('seoTitle');
+            const adArea3 = document.getElementById('adArea3');
+            const adArea4Parent = document.getElementById('adArea4Parent');
+            const adArea4Title = document.getElementById('adArea4Title');
+            const adArea4Box = document.getElementById('adArea4');
+            const btnText = document.getElementById('themeBtnText');
+
+            if (theme === 'dark') {
+                body.className = "bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col";
+                adArea1.className = "w-full bg-slate-950/20 py-4 border-b border-slate-800/50 flex justify-center items-center";
+                adArea1Box.className = "w-full max-w-[728px] h-[90px] bg-slate-800/40 rounded flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-700";
+                menuCard.className = "bg-slate-950/40 p-4 rounded-xl border border-slate-800";
+                menuTitle.className = "font-semibold text-sm text-slate-400 uppercase tracking-wider mb-3";
+                menuActiveLink.className = "block p-2 rounded bg-indigo-600/20 text-indigo-400 font-medium";
+                menuLink1.className = "block p-2 rounded hover:bg-slate-800 text-slate-300 transition";
+                menuLink2.className = "block p-2 rounded hover:bg-slate-800 text-slate-300 transition";
+                adArea2.className = "w-full h-[250px] bg-slate-800/40 rounded-xl flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-700";
+                mainCard.className = "bg-slate-950/40 p-6 rounded-xl border border-slate-800 space-y-4";
+                mainTitle.className = "text-2xl font-bold text-white";
+                mainSubtitle.className = "text-sm text-slate-400";
+                btnOpt1.className = "px-4 py-2 bg-slate-800 hover:bg-indigo-600 text-white text-sm font-medium rounded transition cursor-pointer";
+                btnOpt2.className = "px-4 py-2 bg-slate-800 hover:bg-indigo-600 text-white text-sm font-medium rounded transition cursor-pointer";
+                btnOpt3.className = "px-4 py-2 bg-slate-800 hover:bg-indigo-600 text-white text-sm font-medium rounded transition cursor-pointer";
+                seoCard.className = "prose prose-invert max-w-none text-sm text-slate-400 space-y-4 bg-slate-950/20 p-6 rounded-xl border border-slate-800/50";
+                seoTitle.className = "text-lg font-semibold text-white";
+                adArea3.className = "w-full max-w-[160px] h-[600px] bg-slate-800/40 rounded-xl flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-700 sticky top-24";
+                adArea4Parent.className = "w-full bg-slate-950/40 py-8 border-t border-slate-800 mt-12";
+                adArea4Title.className = "text-xs font-semibold text-slate-500 uppercase tracking-widest";
+                adArea4Box.className = "w-full max-w-[970px] min-h-[250px] bg-slate-800/40 rounded-xl flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-700";
+                btnText.textContent = "Modo Claro";
+            } else {
+                body.className = "bg-white text-slate-800 font-sans min-h-screen flex flex-col";
+                adArea1.className = "w-full bg-slate-100 py-4 border-b border-slate-200 flex justify-center items-center";
+                adArea1Box.className = "w-full max-w-[728px] h-[90px] bg-slate-200/60 rounded flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-400";
+                menuCard.className = "bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm";
+                menuTitle.className = "font-semibold text-sm text-slate-500 uppercase tracking-wider mb-3";
+                menuActiveLink.className = "block p-2 rounded bg-indigo-50 text-indigo-600 font-semibold";
+                menuLink1.className = "block p-2 rounded hover:bg-slate-100 text-slate-700 font-medium transition";
+                menuLink2.className = "block p-2 rounded hover:bg-slate-100 text-slate-700 font-medium transition";
+                adArea2.className = "w-full h-[250px] bg-slate-50 rounded-xl flex items-center justify-center text-xs text-slate-400 border border-dashed border-slate-300";
+                mainCard.className = "bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm space-y-4";
+                mainTitle.className = "text-2xl font-bold text-slate-900";
+                mainSubtitle.className = "text-sm text-slate-500";
+                btnOpt1.className = "px-4 py-2 bg-slate-200 hover:bg-indigo-600 hover:text-white text-slate-800 text-sm font-medium rounded transition cursor-pointer";
+                btnOpt2.className = "px-4 py-2 bg-slate-200 hover:bg-indigo-600 hover:text-white text-slate-800 text-sm font-medium rounded transition cursor-pointer";
+                btnOpt3.className = "px-4 py-2 bg-slate-200 hover:bg-indigo-600 hover:text-white text-slate-700 text-sm font-medium rounded transition cursor-pointer";
+                seoCard.className = "prose max-w-none text-sm text-slate-600 space-y-4 bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm";
+                seoTitle.className = "text-lg font-semibold text-slate-900";
+                adArea3.className = "w-full max-w-[160px] h-[600px] bg-slate-50 rounded-xl flex items-center justify-center text-xs text-slate-400 border border-dashed border-slate-300 sticky top-24";
+                adArea4Parent.className = "w-full bg-slate-50 py-8 border-t border-slate-200 mt-12";
+                adArea4Title.className = "text-xs font-semibold text-slate-400 uppercase tracking-widest";
+                adArea4Box.className = "w-full max-w-[970px] min-h-[250px] bg-slate-200/40 rounded-xl flex items-center justify-center text-xs text-slate-500 border border-dashed border-slate-300";
+                btnText.textContent = "Modo Escuro";
+            }
+        }
+
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', currentTheme);
+            applyTheme(currentTheme);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+        });
+    </script>
+
+    <script>
+        const jsonInput = document.getElementById('jsonInput');
+        const feedback = document.getElementById('validationFeedback');
+
+        function showFeedback(message, isSuccess) {
+            feedback.className = `text-xs p-2 rounded border ${isSuccess ? 'bg-emerald-50 border-emerald-300 text-emerald-700' : 'bg-rose-50 border-rose-300 text-rose-700'}`;
+            if(localStorage.getItem('theme') === 'dark') {
+                feedback.className = `text-xs p-2 rounded border ${isSuccess ? 'bg-emerald-950/30 border-emerald-800 text-emerald-400' : 'bg-rose-950/30 border-rose-800 text-rose-400'}`;
+            }
+            feedback.textContent = message;
+            feedback.classList.remove('hidden');
+        }
+
+        function clearFeedback() { feedback.classList.add('hidden'); }
+
+        function processJson(action) {
+            const rawValue = jsonInput.value.trim();
+            if (!rawValue) return;
+            try {
+                const parsed = JSON.parse(rawValue);
+                clearFeedback();
+                if (action === 'beautify') {
+                    jsonInput.value = JSON.stringify(parsed, null, 4);
+                    showFeedback('JSON estruturado com sucesso!', true);
+                } else if (action === 'minify') {
+                    jsonInput.value = JSON.stringify(parsed);
+                    showFeedback('JSON minificado com sucesso!', true);
+                }
+            } catch (error) {
+                showFeedback(`JSON Inválido: ${error.message}`, false);
+            }
+        }
+
+        function clearInput() { jsonInput.value = ''; clearFeedback(); }
+        function copyJson() {
+            if (!jsonInput.value) return;
+            jsonInput.select();
+            document.execCommand('copy');
+            alert('JSON copiado com sucesso!');
+        }
+    </script>
+</body>
+</html>
