@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" id="appHtml">
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4ZTSC0V0R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y4ZTSC0V0R');
+    </script>
+    <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Online - Count Words, Characters & Lines - ToolsPack Online</title>
+    <meta name="description" content="Free online word counter. Count words, characters, sentences, paragraphs, and lines in real time. Perfect for writers, students, and SEO. 100% private.">
+    <link rel="canonical" href="https://toolspackonline.com/word-counter.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ToolsPack Online">
+    <meta property="og:title" content="Word Counter Online - ToolsPack Online">
+    <meta property="og:description" content="Count words, characters, sentences, and lines in real time. Free and private.">
+    <meta property="og:url" content="https://toolspackonline.com/word-counter.html">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Word Counter - ToolsPack Online">
+    <meta name="twitter:description" content="Count words, characters, sentences, and lines in real time. Free and private.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Word Counter",
+        "url": "https://toolspackonline.com/word-counter.html",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Free online word and character counter with real-time statistics.",
+        "provider": { "@type": "Organization", "name": "ToolsPack Online", "url": "https://toolspackonline.com/" }
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+        if (sessionStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+    </script>
+    <style>*, ::before, ::after { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; }</style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-slate-950 sticky top-0 z-50 shadow-md">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>ToolsPack Online</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="index.html" class="hover:text-white transition">All Tools</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+            </nav>
+            <button onclick="toggleTheme()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium transition cursor-pointer flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+                <span id="themeBtnText">Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <aside class="lg:col-span-1">
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm sticky top-24">
+                <h3 class="font-semibold text-sm text-slate-400 uppercase tracking-wider mb-3">Tools</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="case-converter.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Case Converter</a></li>
+                    <li><a href="json-format.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">JSON Formatter</a></li>
+                    <li><a href="password-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Password Generator</a></li>
+                    <li><a href="base64-encoder.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Base64 Encoder</a></li>
+                    <li><a href="url-encoder.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">URL Encoder</a></li>
+                    <li><a href="hash-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Hash Generator</a></li>
+                    <li><a href="word-counter.html" class="block p-2 rounded bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-300 font-semibold">Word Counter</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="lg:col-span-3 space-y-6">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-slate-900 dark:text-white">Word & Character Counter</h1>
+                    <p class="text-sm text-slate-500 dark:text-slate-300 mt-1">Type or paste your text below. Statistics update automatically as you write.</p>
+                </div>
+                <textarea id="wcInput" oninput="updateCounts()" class="w-full h-48 p-4 bg-slate-950 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none resize-none font-sans text-sm shadow-inner" placeholder="Start typing or paste your text here..."></textarea>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
+                        <div id="statWords" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Words</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
+                        <div id="statChars" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Characters</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
+                        <div id="statCharsNoSpace" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Chars (no spaces)</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
+                        <div id="statSentences" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Sentences</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
+                        <div id="statParagraphs" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Paragraphs</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-lg border border-slate-200 dark:border-slate-700 text-center">
+                        <div id="statLines" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Lines</div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="text-sm text-slate-600 dark:text-slate-300 space-y-6 bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Why Count Words and Characters?</h2>
+                    <p>Word and character counts are essential metrics across writing, publishing, academia, and digital marketing. Editors enforce word limits for articles; students must meet essay requirements; social media platforms cap character counts; and SEO specialists optimize content length for search rankings.</p>
+                    <p>Our counter updates in real time as you type — no button to click, no page reload. All counting happens locally in your browser, so drafts and unpublished work remain completely private.</p>
+                </div>
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">What Each Statistic Measures</h2>
+                    <ul class="space-y-2">
+                        <li><strong>Words</strong> — Sequences of characters separated by whitespace. "Hello world" counts as 2 words.</li>
+                        <li><strong>Characters</strong> — Total number of characters including spaces and punctuation.</li>
+                        <li><strong>Characters (no spaces)</strong> — Character count excluding all whitespace. Useful for platforms that count without spaces.</li>
+                        <li><strong>Sentences</strong> — Text segments ending with . ! or ?. Abbreviations like "Dr." may occasionally affect accuracy.</li>
+                        <li><strong>Paragraphs</strong> — Blocks of text separated by blank lines.</li>
+                        <li><strong>Lines</strong> — Number of line breaks in the text, including empty lines.</li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Common Use Cases</h2>
+                    <p><strong>Writing and editing:</strong> Track progress toward word count goals for blog posts, novels, reports, and academic papers.</p>
+                    <p><strong>Social media:</strong> Twitter/X posts (280 characters), LinkedIn posts (3,000 characters), and Instagram captions (2,200 characters) all have limits. Count before you publish.</p>
+                    <p><strong>SEO content:</strong> Search engines tend to favor comprehensive content. Many SEO guides recommend 1,500–2,500 words for blog articles — use the counter to hit your target.</p>
+                    <p><strong>Translation and localization:</strong> Character counts matter more than word counts in languages like Chinese and Japanese. Track character limits for UI strings and app localization.</p>
+                </div>
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Is my text sent to a server?</h3>
+                            <p class="mt-1">No. All counting is performed locally in your browser. Your drafts and documents never leave your device.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">How are words counted?</h3>
+                            <p class="mt-1">We split text by whitespace and count non-empty segments. Hyphenated words like "well-known" count as one word. Numbers count as words too.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Does it work with other languages?</h3>
+                            <p class="mt-1">Character and line counts work with any language. Word counting works best with space-separated languages (English, Spanish, Portuguese). Languages without spaces between words (Chinese, Japanese) will show lower word counts — use character count instead.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400 mt-8">
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
+    </footer>
+
+    <script>
+        function applyTheme(theme) {
+            const root = document.documentElement;
+            const btnText = document.getElementById('themeBtnText');
+            if (theme === 'dark') { root.classList.add('dark'); btnText.textContent = "Light Mode"; }
+            else { root.classList.remove('dark'); btnText.textContent = "Dark Mode"; }
+        }
+        function toggleTheme() {
+            const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            sessionStorage.setItem('theme', next);
+            applyTheme(next);
+        }
+        window.addEventListener('DOMContentLoaded', () => applyTheme(sessionStorage.getItem('theme') === 'dark' ? 'dark' : 'light'));
+
+        function updateCounts() {
+            const text = document.getElementById('wcInput').value;
+            const trimmed = text.trim();
+            const words = trimmed ? trimmed.split(/\s+/).filter(w => w.length > 0).length : 0;
+            const chars = text.length;
+            const charsNoSpace = text.replace(/\s/g, '').length;
+            const sentences = trimmed ? (trimmed.match(/[^.!?]+[.!?]+/g) || []).length || (trimmed.length > 0 ? 1 : 0) : 0;
+            const paragraphs = trimmed ? trimmed.split(/\n\s*\n/).filter(p => p.trim().length > 0).length : 0;
+            const lines = text.length === 0 ? 0 : text.split('\n').length;
+            document.getElementById('statWords').textContent = words;
+            document.getElementById('statChars').textContent = chars;
+            document.getElementById('statCharsNoSpace').textContent = charsNoSpace;
+            document.getElementById('statSentences').textContent = sentences;
+            document.getElementById('statParagraphs').textContent = paragraphs;
+            document.getElementById('statLines').textContent = lines;
+        }
+    </script>
+</body>
+</html>

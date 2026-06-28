@@ -2,72 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2762876619483321" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4ZTSC0V0R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y4ZTSC0V0R');
+    </script>
+    <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - ToolsPack Online</title>
-    <meta name="description" content="Privacy Policy for ToolsPack Online. Learn how our free web tools process data locally in your browser and how Google AdSense advertising works on this site.">
+    <meta name="description" content="Privacy Policy for ToolsPack Online. Learn how our free web tools process data locally in your browser and what analytics we use.">
     <link rel="canonical" href="https://toolspackonline.com/privacy-policy.html">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ToolsPack Online">
     <meta property="og:title" content="Privacy Policy - ToolsPack Online">
-    <meta property="og:description" content="Privacy Policy for ToolsPack Online. Client-side tools and Google AdSense disclosure.">
+    <meta property="og:description" content="Privacy Policy for ToolsPack Online. Client-side tools and analytics disclosure.">
     <meta property="og:url" content="https://toolspackonline.com/privacy-policy.html">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Privacy Policy - ToolsPack Online">
-    <meta name="twitter:description" content="Privacy Policy for ToolsPack Online. Client-side tools and Google AdSense disclosure.">
+    <meta name="twitter:description" content="Privacy Policy for ToolsPack Online. Client-side tools and analytics disclosure.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { darkMode: 'class' }
+        if (sessionStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col">
 
     <header class="bg-slate-950 sticky top-0 z-50 shadow-md border-b border-slate-900">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div class="max-w-3xl mx-auto px-4 h-16 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
                 <span>ToolsPack Online</span>
             </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400">
-                <a href="index.html" class="hover:text-white transition">Case Converter</a>
-                <a href="json-format.html" class="hover:text-white transition">JSON Formatter</a>
-                <a href="password-generator.html" class="hover:text-white transition">Password Generator</a>
+            <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="index.html" class="hover:text-white transition">All Tools</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
             </nav>
         </div>
     </header>
 
     <main class="flex-1 max-w-3xl w-full mx-auto px-4 py-12">
-        <article class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-6 text-sm text-slate-600 leading-relaxed">
-            <h1 class="text-3xl font-bold text-slate-900 mb-2">Privacy Policy</h1>
-            <p class="text-slate-500">Last updated: June 2026</p>
+        <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-2">Privacy Policy</h1>
+            <p class="text-slate-500 dark:text-slate-400">Last updated: June 2026</p>
 
             <p>Your privacy is important to us. This policy explains how <strong>ToolsPack Online</strong> handles information when you use our website and free online utilities.</p>
 
-            <h2 class="text-xl font-semibold text-slate-900 pt-4">1. Local Data Processing</h2>
-            <p>Our tools (text converters, JSON formatters, password generators, and similar utilities) process all data you enter <strong>entirely in your browser</strong> using client-side JavaScript. No text, code, passwords, or JSON you type is sent to, stored on, or processed by our servers.</p>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">1. Local Data Processing</h2>
+            <p>Our tools (text converters, JSON formatters, password generators, encoders, hash utilities, and similar tools) process all data you enter <strong>entirely in your browser</strong> using client-side JavaScript. No text, code, passwords, or JSON you type is sent to, stored on, or processed by our servers.</p>
 
-            <h2 class="text-xl font-semibold text-slate-900 pt-4">2. Google AdSense and Cookies</h2>
-            <p>This site displays advertisements served by <strong>Google AdSense</strong>. Google and its partners may use cookies (including the DoubleClick cookie) to serve ads based on your visits to this site and other sites on the Internet.</p>
-            <p>You may opt out of personalized advertising by visiting <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">Google Ads Settings</a> or <a href="https://www.aboutads.info/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">aboutads.info</a>.</p>
-            <p>For more information on how Google uses data from partner sites, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">How Google uses data when you use our partners' sites or apps</a>.</p>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">2. Google Analytics</h2>
+            <p>We use <strong>Google Analytics</strong> (measurement ID: G-Y4ZTSC0V0R) to understand how visitors use our website. This service collects anonymized data such as pages visited, time spent on site, browser type, device type, and general geographic location (country/city level).</p>
+            <p>Google Analytics does <strong>not</strong> collect the content you enter in our tools. It tracks website usage patterns only. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline">Google Analytics Opt-out Browser Add-on</a>.</p>
+            <p>For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline">Google's Privacy Policy</a>.</p>
 
-            <h2 class="text-xl font-semibold text-slate-900 pt-4">3. Analytics and Server Logs</h2>
-            <p>Like most websites, our hosting provider may collect standard server logs (IP address, browser type, pages visited) for security and performance. We do not link this data to the content you enter in our tools.</p>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">3. Cookies</h2>
+            <p>Google Analytics may use cookies to distinguish unique visitors and track session data. These cookies do not contain personal information or the content you enter in our tools. You can control cookies through your browser settings.</p>
 
-            <h2 class="text-xl font-semibold text-slate-900 pt-4">4. Third-Party Links</h2>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">4. Server Logs</h2>
+            <p>Our hosting provider may collect standard server logs (IP address, browser type, pages requested, timestamps) for security and performance monitoring. We do not link this data to the content you enter in our tools.</p>
+
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">5. Third-Party Links</h2>
             <p>Our site may contain links to external websites. We are not responsible for the privacy practices or content of those third-party sites.</p>
 
-            <h2 class="text-xl font-semibold text-slate-900 pt-4">5. Contact</h2>
-            <p>If you have questions about this Privacy Policy, please contact us through the channels listed on our website.</p>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">6. Children's Privacy</h2>
+            <p>ToolsPack Online is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 
-            <p class="text-xs text-slate-400 pt-6 border-t border-slate-200">This policy is effective as of June 2026.</p>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-4">7. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. We encourage you to review this policy periodically.</p>
+
+            <p class="text-xs text-slate-400 dark:text-slate-500 pt-6 border-t border-slate-200 dark:border-slate-700">This policy is effective as of June 2026. For more about our project, visit the <a href="about.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">About page</a>.</p>
         </article>
     </main>
 
     <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400">
-        <p>&copy; 2026 ToolsPack Online • <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a></p>
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
     </footer>
 
 </body>

@@ -7,19 +7,17 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-Y4ZTSC0V0R');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2762876619483321" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON Formatter Online - Pretty Print & Validate - ToolsPack Online</title>
-    <meta name="description" content="Validate, clean, and format raw JSON strings easily. A completely private and secure web editor by ToolsPack Online.">
+    <title>JSON Formatter Online - Pretty Print, Minify & Validate - ToolsPack Online</title>
+    <meta name="description" content="Free online JSON formatter and validator. Prettify, minify, and check JSON syntax instantly. Runs 100% in your browser — your data stays private.">
     <link rel="canonical" href="https://toolspackonline.com/json-format.html">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ToolsPack Online">
-    <meta property="og:title" content="JSON Formatter Online - Pretty Print & Validate - ToolsPack Online">
+    <meta property="og:title" content="JSON Formatter Online - ToolsPack Online">
     <meta property="og:description" content="Validate, clean, and format raw JSON strings easily. Private and secure — runs in your browser.">
     <meta property="og:url" content="https://toolspackonline.com/json-format.html">
     <meta property="og:locale" content="en_US">
@@ -42,29 +40,24 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class'
-        }
+        tailwind.config = { darkMode: 'class' }
         if (sessionStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
     </script>
     <style>
-        *, ::before, ::after {
-            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-        }
+        *, ::before, ::after { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; }
     </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col">
 
     <header class="bg-slate-950 sticky top-0 z-50 shadow-md">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
                 <span>ToolsPack Online</span>
-            </div>
-            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400 mr-auto ml-8">
-                <a href="index.html" class="hover:text-white transition">Case Converter</a>
-                <a href="json-format.html" class="hover:text-white transition text-indigo-400 font-medium">JSON Formatter</a>
-                <a href="password-generator.html" class="hover:text-white transition">Password Generator</a>
+            </a>
+            <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="index.html" class="hover:text-white transition">All Tools</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
             </nav>
             <button onclick="toggleTheme()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium transition cursor-pointer flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
@@ -73,48 +66,31 @@
         </div>
     </header>
 
-    <div class="w-full bg-slate-100 dark:bg-slate-900 py-4 border-b border-slate-200 dark:border-slate-800 flex justify-center items-center">
-        <div class="w-full max-w-[728px] h-[90px] bg-slate-200/60 dark:bg-slate-800/60 rounded flex items-center justify-center text-xs text-slate-500 dark:text-slate-400 border border-dashed border-slate-400 dark:border-slate-700">
-            <!-- AdSense Leaderboard 728x90: uncomment after approval
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            -->
-            <span>Ad Space — Leaderboard 728×90</span>
-        </div>
-    </div>
+    <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        <aside class="lg:col-span-3 space-y-6">
-            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                <h3 class="font-semibold text-sm text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-3">Tools Menu</h3>
+        <aside class="lg:col-span-1">
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm sticky top-24">
+                <h3 class="font-semibold text-sm text-slate-400 uppercase tracking-wider mb-3">Tools</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="index.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Change Text Case</a></li>
+                    <li><a href="case-converter.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Case Converter</a></li>
                     <li><a href="json-format.html" class="block p-2 rounded bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-300 font-semibold">JSON Formatter</a></li>
                     <li><a href="password-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Password Generator</a></li>
+                    <li><a href="base64-encoder.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Base64 Encoder</a></li>
+                    <li><a href="url-encoder.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">URL Encoder</a></li>
+                    <li><a href="hash-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Hash Generator</a></li>
+                    <li><a href="word-counter.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Word Counter</a></li>
                 </ul>
-            </div>
-
-            <div class="w-full h-[250px] bg-white dark:bg-slate-800/60 rounded-xl flex items-center justify-center text-xs text-slate-400 dark:text-slate-400 border border-dashed border-slate-300 dark:border-slate-700 shadow-sm">
-                <!-- AdSense Medium Rectangle 300x250: uncomment after approval
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000001" data-ad-format="rectangle"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                -->
-                <span>Ad Space — Rectangle 300×250</span>
             </div>
         </aside>
 
-        <section class="lg:col-span-6 space-y-6">
+        <section class="lg:col-span-3 space-y-6">
             <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
                 <div>
                     <h1 class="text-2xl font-bold text-slate-900 dark:text-white">JSON Formatter</h1>
-                    <p class="text-sm text-slate-500 dark:text-slate-300">Paste your raw JSON string below to clean and prettify its structure.</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-300 mt-1">Paste your raw JSON string below to clean, validate, and prettify its structure.</p>
                 </div>
-
                 <textarea id="jsonInput" class="w-full h-48 p-4 bg-slate-950 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none resize-none font-mono text-xs shadow-inner" placeholder='{"key": "value", "list": [1, 2, 3]}'></textarea>
-
                 <div id="feedbackMessage" class="hidden text-xs p-2 rounded border"></div>
-
                 <div class="flex flex-wrap gap-2 pt-2">
                     <button onclick="formatJSON()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded transition cursor-pointer shadow-sm">Prettify JSON</button>
                     <button onclick="minifyJSON()" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-white text-sm font-medium rounded transition cursor-pointer">Minify</button>
@@ -125,47 +101,84 @@
                 </div>
             </div>
 
-            <article class="prose dark:prose-invert max-w-none text-sm text-slate-600 dark:text-slate-300 space-y-4 bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200/60 dark:border-slate-700 shadow-sm">
-                <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Why use the JSON Formatter from ToolsPack Online?</h2>
-                <p>Analyzing compact APIs can be exhausting without structural nested formatting. Our online service instantly beauty-prints complex JSON structures, validates properties, and highlights syntax script compilation mistakes securely.</p>
-                <p>All script formatting parses completely on the front-end within your personal browser runtime environment. We do not transfer data across tracking servers, keeping token hashes completely isolated.</p>
+            <article class="text-sm text-slate-600 dark:text-slate-300 space-y-6 bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">What Is JSON and Why Format It?</h2>
+                    <p>JSON (JavaScript Object Notation) is the most widely used data interchange format on the web. APIs, configuration files, and databases frequently use JSON to structure information. A typical JSON payload might look like a single compressed line: <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">{"name":"Alice","roles":["admin","editor"],"active":true}</code></p>
+                    <p>Reading unformatted JSON is difficult — especially with nested objects and long arrays. A JSON formatter adds proper indentation and line breaks so you can quickly understand the data structure, spot errors, and share readable output with teammates.</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">How to Use This JSON Formatter</h2>
+                    <ol class="list-decimal list-inside space-y-2 pl-1">
+                        <li><strong>Paste your JSON</strong> into the text area above. It can be minified (single line) or already partially formatted.</li>
+                        <li><strong>Click "Prettify JSON"</strong> to format it with 4-space indentation. If the JSON is invalid, you will see a clear error message describing the problem.</li>
+                        <li><strong>Click "Minify"</strong> to remove all unnecessary whitespace and compress the JSON to a single line — useful for reducing payload size.</li>
+                        <li><strong>Click "Copy"</strong> to copy the formatted result to your clipboard.</li>
+                    </ol>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Prettify vs. Minify</h2>
+                    <p><strong>Prettify (Pretty Print)</strong> expands JSON into a human-readable tree structure with consistent indentation. Use this when debugging API responses, reviewing configuration files, or preparing JSON for documentation.</p>
+                    <p><strong>Minify</strong> removes all whitespace, line breaks, and unnecessary characters. The result is valid JSON in the smallest possible form. Use minified JSON when sending data over the network to reduce bandwidth, or when storing JSON in environments where space matters.</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Common JSON Errors This Tool Catches</h2>
+                    <ul class="space-y-2">
+                        <li><strong>Trailing commas</strong> — JSON does not allow commas after the last item in an object or array. Example: <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">{"a": 1,}</code> is invalid.</li>
+                        <li><strong>Single quotes</strong> — JSON requires double quotes for strings. <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">{'key': 'value'}</code> will fail; use <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">{"key": "value"}</code> instead.</li>
+                        <li><strong>Unquoted keys</strong> — Object keys must be quoted strings in strict JSON. <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">{name: "Alice"}</code> is invalid.</li>
+                        <li><strong>Missing brackets or braces</strong> — Every opening <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">{</code> or <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">[</code> must have a matching closing character.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Real-World Use Cases</h2>
+                    <p><strong>API debugging:</strong> When an API returns unexpected results, paste the raw response into this formatter to inspect the structure, verify field names, and check nested data.</p>
+                    <p><strong>Configuration management:</strong> Tools like package.json, tsconfig.json, and CI/CD pipeline configs use JSON. Formatting helps catch syntax errors before they cause build failures.</p>
+                    <p><strong>Data migration:</strong> When moving data between systems, validating JSON ensures the payload will be accepted by the target platform.</p>
+                    <p><strong>Learning and teaching:</strong> Students learning about data structures benefit from seeing properly formatted JSON with clear hierarchy and indentation.</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Is my JSON data sent to a server?</h3>
+                            <p class="mt-1">No. Parsing and formatting happen entirely in your browser. Your JSON — which may contain API keys, user data, or proprietary information — never leaves your device.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">What is the maximum JSON size I can format?</h3>
+                            <p class="mt-1">There is no hard limit, but very large JSON files (several megabytes) may cause your browser to slow down temporarily. For files over 1 MB, consider using a desktop tool or command-line utility like <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">jq</code>.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Does this tool support JSON with comments?</h3>
+                            <p class="mt-1">Standard JSON does not support comments. If your input contains <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">//</code> or <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">/* */</code> comments, the parser will report an error. Remove comments before formatting, or use JSONC-aware tools for that format.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Can I format JSON with Unicode or special characters?</h3>
+                            <p class="mt-1">Yes. The formatter preserves all Unicode characters, escape sequences, and special characters exactly as they appear in valid JSON.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Is this the same as JSONLint?</h3>
+                            <p class="mt-1">Our tool provides similar validation and formatting capabilities, but runs entirely client-side for maximum privacy. No data is uploaded for validation.</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
-
-        <aside class="lg:col-span-3 flex justify-center">
-            <div class="w-full max-w-[160px] h-[600px] bg-white dark:bg-slate-800/60 rounded-xl flex items-center justify-center text-xs text-slate-400 dark:text-slate-400 border border-dashed border-slate-300 dark:border-slate-700 sticky top-24 shadow-sm">
-                <!-- AdSense Skyscraper 160x600: uncomment after approval
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000002" data-ad-format="vertical"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                -->
-                <span>Ad Space — Skyscraper 160×600</span>
-            </div>
-        </aside>
-
     </main>
 
-    <div class="w-full bg-white dark:bg-slate-900 py-8 border-t border-slate-200 dark:border-slate-800 mt-12">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
-            <h4 class="text-xs font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-widest">Sponsored Content</h4>
-            <div class="w-full max-w-[970px] min-h-[250px] bg-slate-100 dark:bg-slate-800/60 rounded-xl flex items-center justify-center text-xs text-slate-500 dark:text-slate-400 border border-dashed border-slate-300 dark:border-slate-700">
-                <!-- AdSense Multiplex: uncomment after approval
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000003" data-ad-format="autorelaxed"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                -->
-                <span>Ad Space — Multiplex / Native</span>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400">
-        <p>&copy; 2026 ToolsPack Online • <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a></p>
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400 mt-8">
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
     </footer>
 
     <script>
         function applyTheme(theme) {
             const root = document.documentElement;
             const btnText = document.getElementById('themeBtnText');
-
             if (theme === 'dark') {
                 root.classList.add('dark');
                 btnText.textContent = "Light Mode";
@@ -174,26 +187,21 @@
                 btnText.textContent = "Dark Mode";
             }
         }
-
         function toggleTheme() {
             const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
             sessionStorage.setItem('theme', next);
             applyTheme(next);
         }
-
         window.addEventListener('DOMContentLoaded', () => {
             applyTheme(sessionStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
         });
-
         const jsonInput = document.getElementById('jsonInput');
         const feedback = document.getElementById('feedbackMessage');
-
         function showFeedback(text, isError) {
             feedback.className = `text-xs p-2 rounded border ${isError ? 'bg-rose-50 border-rose-200 text-rose-700 dark:bg-rose-950/30 dark:border-rose-900 dark:text-rose-400' : 'bg-emerald-50 border-emerald-200 text-emerald-700 dark:bg-emerald-950/30 dark:border-emerald-900 dark:text-emerald-400'}`;
             feedback.textContent = text;
             feedback.classList.remove('hidden');
         }
-
         function formatJSON() {
             const rawValue = jsonInput.value.trim();
             if(!rawValue) return;
@@ -205,7 +213,6 @@
                 showFeedback(`Invalid JSON: ${err.message}`, true);
             }
         }
-
         function minifyJSON() {
             const rawValue = jsonInput.value.trim();
             if(!rawValue) return;
@@ -217,12 +224,9 @@
                 showFeedback(`Invalid JSON: ${err.message}`, true);
             }
         }
-
         function copyJSON() {
             if (!jsonInput.value) return;
-            jsonInput.select();
-            document.execCommand('copy');
-            alert('JSON copied to clipboard!');
+            navigator.clipboard.writeText(jsonInput.value).then(() => alert('JSON copied to clipboard!'));
         }
     </script>
 </body>

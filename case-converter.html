@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" id="appHtml">
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4ZTSC0V0R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y4ZTSC0V0R');
+    </script>
+    <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Case Online - Uppercase, Lowercase & Title Case - ToolsPack Online</title>
+    <meta name="description" content="Free online text case converter. Transform text to UPPERCASE, lowercase, Title Case, or iNVERSE cAsE instantly. 100% private — runs in your browser.">
+    <link rel="canonical" href="https://toolspackonline.com/case-converter.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ToolsPack Online">
+    <meta property="og:title" content="Change Text Case Online - ToolsPack Online">
+    <meta property="og:description" content="Convert text to uppercase, lowercase, title case, or inverse case online. Fast, free, and 100% private.">
+    <meta property="og:url" content="https://toolspackonline.com/case-converter.html">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Change Text Case Online - ToolsPack Online">
+    <meta name="twitter:description" content="Convert text to uppercase, lowercase, title case, or inverse case online. Fast, free, and 100% private.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Change Text Case",
+        "url": "https://toolspackonline.com/case-converter.html",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Free online tool to convert text to uppercase, lowercase, title case, or inverse case.",
+        "provider": { "@type": "Organization", "name": "ToolsPack Online", "url": "https://toolspackonline.com/" }
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+        if (sessionStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+    </script>
+    <style>
+        *, ::before, ::after { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-slate-950 sticky top-0 z-50 shadow-md">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>ToolsPack Online</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="index.html" class="hover:text-white transition">All Tools</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+            </nav>
+            <button onclick="toggleTheme()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium transition cursor-pointer flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+                <span id="themeBtnText">Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+        <aside class="lg:col-span-1">
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm sticky top-24">
+                <h3 class="font-semibold text-sm text-slate-400 uppercase tracking-wider mb-3">Tools</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="case-converter.html" class="block p-2 rounded bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-300 font-semibold">Case Converter</a></li>
+                    <li><a href="json-format.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">JSON Formatter</a></li>
+                    <li><a href="password-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Password Generator</a></li>
+                    <li><a href="base64-encoder.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Base64 Encoder</a></li>
+                    <li><a href="url-encoder.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">URL Encoder</a></li>
+                    <li><a href="hash-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Hash Generator</a></li>
+                    <li><a href="word-counter.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Word Counter</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="lg:col-span-3 space-y-6">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-slate-900 dark:text-white">Change Text Case</h1>
+                    <p class="text-sm text-slate-500 dark:text-slate-300 mt-1">Type or paste your content below to transform its formatting instantly.</p>
+                </div>
+                <textarea id="textInput" class="w-full h-48 p-4 bg-slate-950 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none resize-none font-sans text-sm shadow-inner" placeholder="Type or paste your text here..."></textarea>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <button onclick="transformText('upper')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">UPPERCASE</button>
+                    <button onclick="transformText('lower')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">lowercase</button>
+                    <button onclick="transformText('capital')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">Title Case</button>
+                    <button onclick="transformText('inverse')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">iNVERSE</button>
+                    <button onclick="copyText()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded transition ml-auto flex items-center gap-1 cursor-pointer shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"/></svg>
+                        Copy
+                    </button>
+                </div>
+            </div>
+
+            <article class="text-sm text-slate-600 dark:text-slate-300 space-y-6 bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">What Is a Text Case Converter?</h2>
+                    <p>A text case converter is a utility that changes the capitalization pattern of letters in a block of text. Instead of manually editing each word in a document, spreadsheet, or code comment, you paste the content once and apply the desired format with a single click. This is especially useful when working with data exported from databases, content copied from PDFs, or lists that need consistent formatting.</p>
+                    <p>ToolsPack Online runs this conversion entirely inside your browser. Your text never leaves your device — there is no server upload, no account required, and no data retention.</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">How to Use This Tool</h2>
+                    <ol class="list-decimal list-inside space-y-2 pl-1">
+                        <li><strong>Paste or type</strong> your text into the input area above.</li>
+                        <li><strong>Choose a format</strong> by clicking one of the four buttons: UPPERCASE, lowercase, Title Case, or iNVERSE.</li>
+                        <li><strong>Review the result</strong> in the same text area — the converted text replaces the original.</li>
+                        <li><strong>Click Copy</strong> to send the formatted text to your clipboard for use elsewhere.</li>
+                    </ol>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Case Types Explained</h2>
+                    <ul class="space-y-2">
+                        <li><strong>UPPERCASE</strong> — Converts every letter to capital form. Example: <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">hello world</code> becomes <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">HELLO WORLD</code>. Commonly used for headings, acronyms, and database normalization.</li>
+                        <li><strong>lowercase</strong> — Converts every letter to its small form. Example: <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">Hello World</code> becomes <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">hello world</code>. Useful for URLs, email addresses, and slug generation.</li>
+                        <li><strong>Title Case</strong> — Capitalizes the first letter of each word. Example: <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">the quick brown fox</code> becomes <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">The Quick Brown Fox</code>. Ideal for article titles, product names, and presentation slides.</li>
+                        <li><strong>iNVERSE cAsE</strong> — Swaps the case of each individual letter. Example: <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">Hello</code> becomes <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">hELLO</code>. Often used for stylistic effects or testing case-sensitivity in applications.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Common Use Cases</h2>
+                    <p><strong>Content editing:</strong> Writers and editors frequently receive drafts with inconsistent capitalization. A case converter standardizes headings, bullet points, and quoted text in seconds.</p>
+                    <p><strong>Programming and data work:</strong> Developers often need to convert variable names between conventions — for example, turning <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">myVariableName</code> to <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">MYVARIABLENAME</code> for environment variables or constants.</p>
+                    <p><strong>Social media and marketing:</strong> Platform-specific formatting rules sometimes require all-caps headlines or lowercase aesthetic styles. This tool lets you preview and apply those styles quickly.</p>
+                    <p><strong>Accessibility testing:</strong> Screen readers handle uppercase text differently. Converting sample content helps QA teams verify how assistive technologies interpret various case formats.</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Is my text sent to a server?</h3>
+                            <p class="mt-1">No. All processing happens locally in your browser using JavaScript. We do not collect, store, or transmit the text you enter.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Does Title Case capitalize every word?</h3>
+                            <p class="mt-1">Yes, our Title Case mode capitalizes the first letter of each word separated by whitespace. It does not follow strict AP or Chicago style rules that exclude articles and prepositions — for most everyday uses, this produces the expected result.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Can I convert very large blocks of text?</h3>
+                            <p class="mt-1">The tool handles large text blocks, but extremely long content (hundreds of thousands of characters) may slow down your browser temporarily. For best performance, work with sections under 50,000 characters at a time.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Does it work with non-English characters?</h3>
+                            <p class="mt-1">Yes. JavaScript's built-in case methods support Unicode characters including accented letters (é, ñ, ü), Cyrillic, and many other scripts. Some special characters without uppercase/lowercase pairs remain unchanged.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-slate-800 dark:text-slate-200">Is this tool free?</h3>
+                            <p class="mt-1">Completely free with no registration, no usage limits, and no watermarks on your output.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400 mt-8">
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
+    </footer>
+
+    <script>
+        function applyTheme(theme) {
+            const root = document.documentElement;
+            const btnText = document.getElementById('themeBtnText');
+            if (theme === 'dark') {
+                root.classList.add('dark');
+                btnText.textContent = "Light Mode";
+            } else {
+                root.classList.remove('dark');
+                btnText.textContent = "Dark Mode";
+            }
+        }
+        function toggleTheme() {
+            const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            sessionStorage.setItem('theme', next);
+            applyTheme(next);
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            applyTheme(sessionStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
+        });
+        const inputArea = document.getElementById('textInput');
+        function transformText(type) {
+            let value = inputArea.value;
+            if (!value) return;
+            switch(type) {
+                case 'upper': inputArea.value = value.toUpperCase(); break;
+                case 'lower': inputArea.value = value.toLowerCase(); break;
+                case 'capital': inputArea.value = value.toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); }); break;
+                case 'inverse':
+                    let output = "";
+                    for(let i = 0; i < value.length; i++) {
+                        let c = value.charAt(i);
+                        output += (c === c.toUpperCase()) ? c.toLowerCase() : c.toUpperCase();
+                    }
+                    inputArea.value = output;
+                    break;
+            }
+        }
+        function copyText() {
+            if (!inputArea.value) return;
+            navigator.clipboard.writeText(inputArea.value).then(() => alert('Text copied to clipboard!'));
+        }
+    </script>
+</body>
+</html>

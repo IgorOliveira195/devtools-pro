@@ -2,70 +2,57 @@
 <html lang="en" id="appHtml">
 <head>
     <meta charset="UTF-8">
-        <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4ZTSC0V0R"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-Y4ZTSC0V0R');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2762876619483321" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Text Case Online - ToolsPack Online</title>
-    <meta name="description" content="Convert text to uppercase, lowercase, title case, or inverse case online. Fast, free, and 100% private web utilities by ToolsPack Online.">
+    <title>ToolsPack Online - Free Private Web Tools for Developers & Writers</title>
+    <meta name="description" content="ToolsPack Online offers 7 free, privacy-first web utilities: text converter, JSON formatter, password generator, Base64, URL encoder, hash generator, and word counter.">
     <link rel="canonical" href="https://toolspackonline.com/">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ToolsPack Online">
-    <meta property="og:title" content="Change Text Case Online - ToolsPack Online">
-    <meta property="og:description" content="Convert text to uppercase, lowercase, title case, or inverse case online. Fast, free, and 100% private.">
+    <meta property="og:title" content="ToolsPack Online - Free Private Web Tools">
+    <meta property="og:description" content="Free, privacy-first web utilities that run entirely in your browser. No uploads, no accounts, no data collection.">
     <meta property="og:url" content="https://toolspackonline.com/">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Change Text Case Online - ToolsPack Online">
-    <meta name="twitter:description" content="Convert text to uppercase, lowercase, title case, or inverse case online. Fast, free, and 100% private.">
+    <meta name="twitter:title" content="ToolsPack Online - Free Private Web Tools">
+    <meta name="twitter:description" content="Free, privacy-first web utilities that run entirely in your browser.">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Change Text Case",
+        "@type": "WebSite",
+        "name": "ToolsPack Online",
         "url": "https://toolspackonline.com/",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Any",
-        "browserRequirements": "Requires JavaScript",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "description": "Free online tool to convert text to uppercase, lowercase, title case, or inverse case.",
-        "provider": { "@type": "Organization", "name": "ToolsPack Online", "url": "https://toolspackonline.com/" }
+        "description": "Free online web tools for text formatting, JSON validation, encoding, hashing, and password generation — all running locally in your browser.",
+        "publisher": { "@type": "Organization", "name": "ToolsPack Online", "url": "https://toolspackonline.com/" }
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class'
-        }
+        tailwind.config = { darkMode: 'class' }
         if (sessionStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
     </script>
     <style>
-        *, ::before, ::after {
-            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-        }
+        *, ::before, ::after { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; }
     </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col">
 
     <header class="bg-slate-950 sticky top-0 z-50 shadow-md">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
                 <span>ToolsPack Online</span>
-            </div>
-            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400 mr-auto ml-8">
-                <a href="index.html" class="hover:text-white transition text-indigo-400 font-medium">Case Converter</a>
-                <a href="json-format.html" class="hover:text-white transition">JSON Formatter</a>
-                <a href="password-generator.html" class="hover:text-white transition">Password Generator</a>
+            </a>
+            <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="about.html" class="hover:text-white transition">About</a>
             </nav>
             <button onclick="toggleTheme()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium transition cursor-pointer flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
@@ -74,99 +61,109 @@
         </div>
     </header>
 
-    <div class="w-full bg-slate-100 dark:bg-slate-900 py-4 border-b border-slate-200 dark:border-slate-800 flex justify-center items-center">
-        <div class="w-full max-w-[728px] h-[90px] bg-slate-200/60 dark:bg-slate-800/60 rounded flex items-center justify-center text-xs text-slate-500 dark:text-slate-400 border border-dashed border-slate-400 dark:border-slate-700">
-            <!-- AdSense Leaderboard 728x90: uncomment after approval
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            -->
-            <span>Ad Space — Leaderboard 728×90</span>
-        </div>
-    </div>
+    <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-12 space-y-12">
 
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        <aside class="lg:col-span-3 space-y-6">
-            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                <h3 class="font-semibold text-sm text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-3">Tools Menu</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="index.html" class="block p-2 rounded bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-300 font-semibold">Change Text Case</a></li>
-                    <li><a href="json-format.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">JSON Formatter</a></li>
-                    <li><a href="password-generator.html" class="block p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition">Password Generator</a></li>
+        <section class="text-center space-y-4">
+            <h1 class="text-4xl font-bold text-slate-900 dark:text-white tracking-tight">Free Web Tools That Respect Your Privacy</h1>
+            <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">ToolsPack Online is a collection of practical utilities for everyday text, data, and security tasks. Every tool runs entirely inside your browser — your data never leaves your device.</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="case-converter.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-indigo-600 dark:text-indigo-400"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Text Case Converter</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Convert text to UPPERCASE, lowercase, Title Case, or iNVERSE cAsE with one click.</p>
+            </a>
+            <a href="json-format.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">JSON Formatter</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Prettify, minify, and validate JSON strings instantly with clear error messages.</p>
+            </a>
+            <a href="password-generator.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                <div class="w-10 h-10 bg-amber-100 dark:bg-amber-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-amber-600 dark:text-amber-400"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Password Generator</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Create strong random passwords with cryptographically secure randomness.</p>
+            </a>
+            <a href="base64-encoder.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                <div class="w-10 h-10 bg-violet-100 dark:bg-violet-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-violet-600 dark:text-violet-400"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Base64 Encoder</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Encode text to Base64 and decode Base64 strings back to plain text with UTF-8 support.</p>
+            </a>
+            <a href="url-encoder.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                <div class="w-10 h-10 bg-sky-100 dark:bg-sky-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-sky-600 dark:text-sky-400"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">URL Encoder</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Encode and decode URL strings and query parameters for safe use in web applications.</p>
+            </a>
+            <a href="hash-generator.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                <div class="w-10 h-10 bg-rose-100 dark:bg-rose-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-rose-600 dark:text-rose-400"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Hash Generator</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Generate SHA-256, SHA-384, and SHA-512 cryptographic hashes from any text.</p>
+            </a>
+            <a href="word-counter.html" class="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-600 transition md:col-span-2 lg:col-span-1">
+                <div class="w-10 h-10 bg-teal-100 dark:bg-teal-500/20 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-teal-600 dark:text-teal-400"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                </div>
+                <h2 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Word Counter</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Count words, characters, sentences, paragraphs, and lines in real time as you type.</p>
+            </a>
+        </section>
+
+        <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <div class="space-y-3">
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Why ToolsPack Online Exists</h2>
+                <p>Most online tools require you to upload sensitive data to remote servers — text documents, API responses, or passwords you need to generate. That creates unnecessary privacy risks, especially when the tool itself is simple enough to run entirely in your browser.</p>
+                <p>ToolsPack Online was built on a single principle: <strong>your data stays on your device</strong>. Every utility on this site uses client-side JavaScript to process input locally. Nothing you type, paste, or generate is transmitted to our servers. There are no user accounts, no cloud storage, and no tracking of the content you work with.</p>
+            </div>
+
+            <div class="space-y-3">
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white">How Our Tools Work</h2>
+                <p>When you open any tool on ToolsPack Online, the page loads a small JavaScript program into your browser. When you interact with the tool — converting text, formatting JSON, or generating a password — the computation happens in your browser's JavaScript engine. The result appears instantly on screen.</p>
+                <p>This architecture means:</p>
+                <ul class="list-disc list-inside space-y-1 pl-2">
+                    <li>Your input data is never sent over the network</li>
+                    <li>Tools work offline after the initial page load</li>
+                    <li>There is no server-side storage or logging of your content</li>
+                    <li>You can use the tools without creating an account or providing personal information</li>
                 </ul>
             </div>
 
-            <div class="w-full h-[250px] bg-white dark:bg-slate-800/60 rounded-xl flex items-center justify-center text-xs text-slate-400 dark:text-slate-400 border border-dashed border-slate-300 dark:border-slate-700 shadow-sm">
-                <!-- AdSense Medium Rectangle 300x250: uncomment after approval
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000001" data-ad-format="rectangle"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                -->
-                <span>Ad Space — Rectangle 300×250</span>
-            </div>
-        </aside>
-
-        <section class="lg:col-span-6 space-y-6">
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
-                <div>
-                    <h1 class="text-2xl font-bold text-slate-900 dark:text-white">Change Text Case</h1>
-                    <p class="text-sm text-slate-500 dark:text-slate-300">Type or paste your content below to transform its formatting instantly.</p>
-                </div>
-
-                <textarea id="textInput" class="w-full h-48 p-4 bg-slate-950 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none resize-none font-sans text-sm shadow-inner" placeholder="Type or paste your text here..."></textarea>
-
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <button onclick="transformText('upper')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">UPPERCASE</button>
-                    <button onclick="transformText('lower')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">lowercase</button>
-                    <button onclick="transformText('capital')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">Title Case</button>
-                    <button onclick="transformText('inverse')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium rounded transition cursor-pointer">iNVERSE</button>
-                    <button onclick="copyText()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded transition ml-auto flex items-center gap-1 cursor-pointer shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"/></svg>
-                        Copy
-                    </button>
-                </div>
+            <div class="space-y-3">
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Who Uses These Tools</h2>
+                <p><strong>Developers and engineers</strong> use our JSON formatter, Base64 encoder, URL encoder, and hash generator to debug APIs, encode data, and verify file integrity — all without leaving sensitive information on a remote server.</p>
+                <p><strong>Writers and content creators</strong> rely on the word counter to meet article length requirements and the case converter to standardize headings and imported content.</p>
+                <p><strong>Security-conscious users</strong> choose our password generator and hash tools because everything runs locally with cryptographically secure algorithms.</p>
+                <p><strong>Students and educators</strong> use these tools for coursework, data exercises, and learning about encoding, hashing, and text processing without installing software.</p>
             </div>
 
-            <article class="prose dark:prose-invert max-w-none text-sm text-slate-600 dark:text-slate-300 space-y-4 bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200/60 dark:border-slate-700 shadow-sm">
-                <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Why use text utilities from ToolsPack Online?</h2>
-                <p>Manually editing letter casing in massive text files is tedious and prone to errors. Our free online utility provides automated solutions to adapt your text structure to uppercase, lowercase, or capitalized titles in a single click.</p>
-                <p>True to the core privacy guidelines of ToolsPack Online, all inputs are handled exclusively client-side. No data is sent over the network or stored on remote databases, protecting confidential articles and regular text fragments perfectly.</p>
-            </article>
-        </section>
-
-        <aside class="lg:col-span-3 flex justify-center">
-            <div class="w-full max-w-[160px] h-[600px] bg-white dark:bg-slate-800/60 rounded-xl flex items-center justify-center text-xs text-slate-400 dark:text-slate-400 border border-dashed border-slate-300 dark:border-slate-700 sticky top-24 shadow-sm">
-                <!-- AdSense Skyscraper 160x600: uncomment after approval
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000002" data-ad-format="vertical"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                -->
-                <span>Ad Space — Skyscraper 160×600</span>
+            <div class="space-y-3">
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Our Commitment to Quality</h2>
+                <p>Each tool on ToolsPack Online includes detailed guides, practical examples, and frequently asked questions to help you get the most out of it. We focus on doing a few things well rather than offering hundreds of shallow utilities. Every page is designed to be genuinely useful — not just a wrapper around a single button.</p>
+                <p>We continuously improve our tools based on real-world use cases and best practices in web development, data formatting, and digital security. Learn more about our mission on the <a href="about.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">About page</a>.</p>
             </div>
-        </aside>
+        </article>
 
     </main>
 
-    <div class="w-full bg-white dark:bg-slate-900 py-8 border-t border-slate-200 dark:border-slate-800 mt-12">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
-            <h4 class="text-xs font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-widest">Sponsored Content</h4>
-            <div class="w-full max-w-[970px] min-h-[250px] bg-slate-100 dark:bg-slate-800/60 rounded-xl flex items-center justify-center text-xs text-slate-500 dark:text-slate-400 border border-dashed border-slate-300 dark:border-slate-700">
-                <!-- AdSense Multiplex: uncomment after approval
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000003" data-ad-format="autorelaxed"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                -->
-                <span>Ad Space — Multiplex / Native</span>
-            </div>
-        </div>
-    </div>
-
     <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400">
-        <p>&copy; 2026 ToolsPack Online • <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a></p>
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
     </footer>
 
     <script>
         function applyTheme(theme) {
             const root = document.documentElement;
             const btnText = document.getElementById('themeBtnText');
-
             if (theme === 'dark') {
                 root.classList.add('dark');
                 btnText.textContent = "Light Mode";
@@ -175,41 +172,14 @@
                 btnText.textContent = "Dark Mode";
             }
         }
-
         function toggleTheme() {
             const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
             sessionStorage.setItem('theme', next);
             applyTheme(next);
         }
-
         window.addEventListener('DOMContentLoaded', () => {
             applyTheme(sessionStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
         });
-
-        const inputArea = document.getElementById('textInput');
-        function transformText(type) {
-            let value = inputArea.value;
-            if (!value) return;
-            switch(type) {
-                case 'upper': inputArea.value = value.toUpperCase(); break;
-                case 'lower': inputArea.value = value.toLowerCase(); break;
-                case 'capital': inputArea.value = value.toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); }); break;
-                case 'inverse':
-                    let output = "";
-                    for(let i = 0; i < value.length; i++) {
-                        let c = value.charAt(i);
-                        output += (c === c.toUpperCase()) ? c.toLowerCase() : c.toUpperCase();
-                    }
-                    inputArea.value = output;
-                    break;
-            }
-        }
-        function copyText() {
-            if (!inputArea.value) return;
-            inputArea.select();
-            document.execCommand('copy');
-            alert('Text copied to clipboard!');
-        }
     </script>
 </body>
 </html>
