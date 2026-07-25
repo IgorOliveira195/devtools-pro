@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" id="appHtml">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
         gtag('js', new Date());
         gtag('config', 'G-Y4ZTSC0V0R');
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2762876619483321"
+     crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToolsPack Online - Free Private Web Tools for Developers & Writers</title>
@@ -52,7 +54,9 @@
                 <span>ToolsPack Online</span>
             </a>
             <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="blog/index.html" class="hover:text-white transition">Blog</a>
                 <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="contact.html" class="hover:text-white transition">Contact</a>
             </nav>
             <button onclick="toggleTheme()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-medium transition cursor-pointer flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
@@ -150,14 +154,38 @@
             <div class="space-y-3">
                 <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Our Commitment to Quality</h2>
                 <p>Each tool on ToolsPack Online includes detailed guides, practical examples, and frequently asked questions to help you get the most out of it. We focus on doing a few things well rather than offering hundreds of shallow utilities. Every page is designed to be genuinely useful — not just a wrapper around a single button.</p>
-                <p>We continuously improve our tools based on real-world use cases and best practices in web development, data formatting, and digital security. Learn more about our mission on the <a href="about.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">About page</a>.</p>
+                <p>We continuously improve our tools based on real-world use cases and best practices in web development, data formatting, and digital security. Learn more about our mission on the <a href="about.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">About page</a>, or read practical guides on the <a href="blog/index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">Blog</a>.</p>
             </div>
         </article>
+
+        <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">From the Blog</h2>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Guides on hashing, encoding, passwords, JSON, and privacy-first workflows.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="blog/sha-256-vs-sha-512.html" class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                    <h3 class="font-semibold text-slate-900 dark:text-white">SHA-256 vs SHA-512</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">When to use each hash algorithm.</p>
+                </a>
+                <a href="blog/strong-passwords-guide.html" class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                    <h3 class="font-semibold text-slate-900 dark:text-white">Strong Passwords Guide</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Length, uniqueness, and local generators.</p>
+                </a>
+                <a href="blog/base64-vs-url-encoding.html" class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                    <h3 class="font-semibold text-slate-900 dark:text-white">Base64 vs URL Encoding</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Pick the right encoding for the job.</p>
+                </a>
+                <a href="blog/why-client-side-tools-matter.html" class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 transition">
+                    <h3 class="font-semibold text-slate-900 dark:text-white">Why Client-Side Tools Matter</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Keep sensitive data in your browser.</p>
+                </a>
+            </div>
+            <p><a href="blog/index.html" class="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline">View all articles &rarr;</a></p>
+        </section>
 
     </main>
 
     <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400">
-        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="blog/index.html" class="hover:underline text-indigo-400">Blog</a> &bull; <a href="contact.html" class="hover:underline text-indigo-400">Contact</a> &bull; <a href="privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="terms.html" class="hover:underline text-indigo-400">Terms</a></p>
     </footer>
 
     <script>

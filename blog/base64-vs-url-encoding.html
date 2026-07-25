@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4ZTSC0V0R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y4ZTSC0V0R');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2762876619483321"
+     crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="-Ia7COteFodWB2aPGjDkC3WUTAUm4_EnPTsfwsGCnPs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 vs URL Encoding: What Each Is For - ToolsPack Online</title>
+    <meta name="description" content="Learn the difference between Base64 encoding and URL (percent) encoding, when to use each, and common mistakes in APIs and query strings.">
+    <link rel="canonical" href="https://toolspackonline.com/blog/base64-vs-url-encoding.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="ToolsPack Online">
+    <meta property="og:title" content="Base64 vs URL Encoding: What Each Is For">
+    <meta property="og:description" content="Base64 and percent-encoding solve different problems. Choose the right one for APIs and URLs.">
+    <meta property="og:url" content="https://toolspackonline.com/blog/base64-vs-url-encoding.html">
+    <meta property="article:published_time" content="2026-07-18">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Base64 vs URL Encoding: What Each Is For",
+        "datePublished": "2026-07-18",
+        "dateModified": "2026-07-18",
+        "author": { "@type": "Organization", "name": "ToolsPack Online" },
+        "publisher": { "@type": "Organization", "name": "ToolsPack Online", "url": "https://toolspackonline.com/" },
+        "mainEntityOfPage": "https://toolspackonline.com/blog/base64-vs-url-encoding.html",
+        "description": "A practical guide to Base64 versus URL percent-encoding."
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+        if (sessionStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-slate-950 sticky top-0 z-50 shadow-md">
+        <div class="max-w-3xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2 font-bold text-xl text-indigo-400 tracking-wide">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 shrink-0" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>ToolsPack Online</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-4 text-xs text-slate-400">
+                <a href="../index.html" class="hover:text-white transition">All Tools</a>
+                <a href="index.html" class="hover:text-white transition text-indigo-400 font-medium">Blog</a>
+                <a href="../about.html" class="hover:text-white transition">About</a>
+                <a href="../contact.html" class="hover:text-white transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl w-full mx-auto px-4 py-12">
+        <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p class="text-xs text-slate-500 dark:text-slate-400"><a href="index.html" class="hover:underline text-indigo-400">Blog</a> &middot; July 18, 2026 &middot; 7 min read</p>
+            <h1 class="text-3xl font-bold text-slate-900 dark:text-white">Base64 vs URL Encoding: What Each Is For</h1>
+
+            <p>Developers often treat Base64 and URL encoding as interchangeable “make this string safe” steps. They are not. Mixing them up leads to broken query parameters, invalid Authorization headers, and hours of debugging that look like networking problems but are really encoding mistakes.</p>
+
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-2">What URL encoding does</h2>
+            <p>URL encoding (also called percent-encoding) replaces characters that are unsafe or reserved in URLs with a <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">%</code> followed by two hex digits. Spaces become <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">%20</code> (or sometimes <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">+</code> in form bodies). Characters like <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">&amp;</code>, <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">=</code>, and <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">?</code> must be encoded when they are data rather than URL structure.</p>
+            <p>Use URL encoding when:</p>
+            <ul class="list-disc list-inside space-y-1 pl-2">
+                <li>Building query strings (<code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">?q=hello%20world</code>)</li>
+                <li>Putting user input into path segments safely</li>
+                <li>Submitting <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">application/x-www-form-urlencoded</code> bodies</li>
+            </ul>
+
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-2">What Base64 does</h2>
+            <p>Base64 converts binary data (or any byte sequence) into a text alphabet of letters, digits, <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">+</code>, <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">/</code>, and optional <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">=</code> padding. It is not encryption and it does not make data secret — anyone can decode it.</p>
+            <p>Use Base64 when:</p>
+            <ul class="list-disc list-inside space-y-1 pl-2">
+                <li>Embedding binary data in JSON or XML</li>
+                <li>Sending images or keys in text-only channels</li>
+                <li>Creating Basic Auth credentials (<code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">username:password</code> encoded)</li>
+                <li>Working with JWTs (which use Base64URL, a URL-safe variant)</li>
+            </ul>
+
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-2">The common mix-up</h2>
+            <p>Base64 output can contain <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">+</code> and <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">/</code>, which are problematic inside query strings. If you put a standard Base64 string into a URL without further encoding, servers may interpret <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">+</code> as a space. The fix is either:</p>
+            <ul class="list-disc list-inside space-y-1 pl-2">
+                <li>URL-encode the Base64 string before placing it in a query parameter, or</li>
+                <li>Use Base64URL (replace <code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">+</code>/<code class="bg-slate-100 dark:bg-slate-900 px-1 rounded">/</code>, drop padding) when the format supports it</li>
+            </ul>
+
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-2">Security reminder</h2>
+            <p>Neither encoding protects confidentiality. Encoding is about representation and transport safety. If you need secrecy, use TLS for transport and proper encryption or hashing for the data itself.</p>
+
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white pt-2">Try it locally</h2>
+            <p>Encode or decode text with our <a href="../base64-encoder.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">Base64 Encoder</a> and <a href="../url-encoder.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">URL Encoder</a>. Both run entirely in your browser.</p>
+
+            <p class="pt-4 border-t border-slate-200 dark:border-slate-700"><a href="index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline">&larr; Back to Blog</a></p>
+        </article>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-400">
+        <p>&copy; 2026 ToolsPack Online &bull; <a href="../about.html" class="hover:underline text-indigo-400">About</a> &bull; <a href="index.html" class="hover:underline text-indigo-400">Blog</a> &bull; <a href="../contact.html" class="hover:underline text-indigo-400">Contact</a> &bull; <a href="../privacy-policy.html" class="hover:underline text-indigo-400">Privacy Policy</a> &bull; <a href="../terms.html" class="hover:underline text-indigo-400">Terms</a></p>
+    </footer>
+
+</body>
+</html>

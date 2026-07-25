@@ -46,6 +46,46 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://toolspackonline.com/contact.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/sha-256-vs-sha-512.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/base64-vs-url-encoding.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/strong-passwords-guide.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/json-formatting-tips.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/word-count-for-writers.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolspackonline.com/blog/why-client-side-tools-matter.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://toolspackonline.com/privacy-policy.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
